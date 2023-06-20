@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Estilos/Reg_Prof.css" />
+    <title>RegsEstudiante</title>
+  </head>
+  <body>
+      <header class="items">
+      <div>
+        <img
+          id="logo"
+          src="Imagenes/logo.png"
+          alt="Logo Universidad"
+          height="175px"
+          width="300px"
+        />
+      </div>
+      <div>
+        <h1 class="Titulo">Registro de Estudiantes</h1>  
+    </div> 
+    </header>
+    <section id="principal">
+      <section id="menu">
+        <div class="opciones">
+          <a class="menulateral" href="Home.html">Página Principal</a>
+        </div>
+        <div class="opciones">
+          <a class="menulateral" href="Registro_Profesor.html"
+            >Registro de Profesores</a
+          >
+        </div>
+        <div class="opciones">
+          <a class="menulateral" href="Registro_Estudiante.html"
+            >Registro de Estudiantes</a
+          >
+        </div>
+        <div class="opciones">
+          <a class="menulateral" href="Calendario.html">Calendario</a>
+        </div>
+        <div class="opciones">
+          <a class="menulateral" href="Soporte.html">Soporte</a>
+        </div>
+      </section>
+      <div class="cuerpo">
+        <div>
+            <h2>Introduccion</h2>
+            <p>En esta página podrás encontrar el registro de Profesores, en el cual será necesario que ingreses<br>
+             los siguientes datos: nombre, edad, cédula, Centro regional perteneciente, materias dictadas y <br>
+             experiencia en virtualidad.</p>
+        </div>
+      </div>
+      <div class="cuerpo">
+	        <form action="Regs_Est.jsp" class="formulario">
+            <h1>Formulario</h1>
+		    <label for="nomb">Nombre</label>
+		    <input type="text" id="nomb" name="user"><br><br>
+		    <label for="ced">Cedula</label>
+		    <input type="text" id="ced" name="ID"><br><br>
+            <label for="año">Año lectivo</label>
+		    <input type="text" id="año" name="year"><br>
+		    <label for="prov">Centro regional donde labora</label>
+		    <input list="Prov" name="Provincias">
+		    <datalist id="Prov">
+		    <option value="Panama">
+		    <option value="Colon">
+		    <option value="Cocle">
+		    <option value="Veraguas">
+		    <option value="Bocas del Toro">
+		    <option value="Darien">
+		    <option value="Los Santos">
+		    </datalist><br><br>
+		    <label for="curso">Cursos a los que desea ingresar</label><br>
+		    <input type="checkbox" name="curso"  id="1" value="Soldadura"><label>Soldadura</label>
+		    <input type="checkbox" name="curso"  id="2" value="Cocina"><label>Cocina</label><br>
+		    <input type="checkbox" name="curso"  id="3" value="Electronica"><label>Electronica</label>
+		    <input type="checkbox" name="curso"  id="4" value="Programacion"><label>Programacion</label><br>
+		    <label for="indice">Indice</label>
+		    <input type="text" id="indice" name="index"><br><br>
+            <input type="submit" id="Enviar">
+           </form>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+          <a href="Home.html" class="footer-button">Página Principal</a>
+          <a href="Registro_Profesor.html" class="footer-button"
+            >Registro de Profesores</a
+          >
+          <a href="Registro_Estudiante.html" class="footer-button"
+            >Registro de Estudiantes</a
+          >
+        </div>
+        <div class="footer-row">
+          <a href="Calendario.html" class="footer-button">Calendario</a>
+          <a href="Soporte.html" class="footer-button">Soporte</a>
+        </div>
+        <div class="footer-row">
+          <p class="footer-copyright">
+            © 2023 Todos los derechos reservados - Universidad del Pueblo
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
